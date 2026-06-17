@@ -1,0 +1,20 @@
+{
+  "url": "https://<TARGET_HOST>/identity/api/auth/login",
+  "method": "POST",
+  "identity_field": "email",
+  "password_field": "password",
+  "timeout": 10,
+  "extra_fields": {},
+  "probes": [
+    {
+      "label": "registered_user",
+      "identity": "registered_user@example.com",
+      "password": "WrongPassword!123"
+    },
+    {
+      "label": "unregistered_user",
+      "identity": "definitely_not_registered_9999@example.com",
+      "password": "WrongPassword!123"
+    }
+  ]
+}

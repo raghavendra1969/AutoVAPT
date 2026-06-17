@@ -1,0 +1,5 @@
+[
+  "/identity/api/auth/login",
+  "/identity/api/v2/vehicle/vehicles",
+  "/workshop/api/shop/products"
+]
